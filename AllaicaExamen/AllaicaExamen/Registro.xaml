@@ -1,0 +1,40 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="AllaicaExamen.Registro">
+    <ContentPage.Content>
+
+        <Grid>
+
+            <Grid.RowDefinitions>
+                <RowDefinition Height="*"/>
+ 
+            </Grid.RowDefinitions>
+
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition/>
+
+            </Grid.ColumnDefinitions>
+            
+            
+            <Label Text="Nombre completo:" Grid.Row="1" Grid.Column="1"  ></Label>
+            <Entry x:Name="txtNombre" Grid.Row="0" Grid.Column="1"></Entry>
+
+            <Label Text="Monto Inicial:" Grid.Row="2" Grid.Column="1" ></Label>
+            <Entry x:Name="txtMontoinicial" Keyboard="Numeric" Grid.Row="1" Grid.Column="1"></Entry>
+
+            <Label Text="Pago Mensual:" Grid.Row="3" Grid.Column="1" ></Label>
+            <Entry x:Name="txtPagoMensual" Keyboard="Numeric" Grid.Row="2" Grid.Column="1"></Entry>
+
+            <Button x:Name="btnGuardar" BackgroundColor="#0080FF"
+                    Text="Guardar informacion"
+                    Clicked="btnGuardar_Clicked"
+                    Grid.Row="4" Grid.Column="0">
+
+            </Button>
+
+        </Grid>
+
+
+    </ContentPage.Content>
+</ContentPage>
